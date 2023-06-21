@@ -7,7 +7,7 @@
  */
 int _islower(int c)
 {
-	if ( c >= '\x61' && c <= '\x7A')
+	if (c >= '\x61' && c <= '\x7A')
 		return (1);
 	else
 		return (0);
