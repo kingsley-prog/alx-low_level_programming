@@ -12,8 +12,9 @@ int _islower(int c)
 	for (a = '\x61'; a <= '\x7A'; a++)
 	{
 		if (c == a)
-			return (1);
+			break;
 		else
 			return (0);
 	}
+    return (1);
 }
