@@ -7,15 +7,8 @@
  */
 int _islower(int c)
 {
-    char b = (char) c;
-	char a;
-
-	for (a = 97; a <= 122; a++)
-	{
-		if (b == a)
-			break;
-		else if (b != a)
-			return (0);
-	}
-    return (1);
+    if ( c >= '\x61' && c <= '\x7A')
+        return (1);
+    else
+        return (0);
 }
