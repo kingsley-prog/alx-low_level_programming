@@ -8,18 +8,15 @@
 void print_rev(char *s)
 {
 	int i;
-	int j;
 
 	i = 0;
 
 	while (*(s + i) != 0)
 		i++;
-	/* get the length without the nul */
-	j = i;
 
-	while(j--)
+	while (i--)
 	{
-		_putchar(s[j]);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
