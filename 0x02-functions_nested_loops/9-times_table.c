@@ -20,26 +20,27 @@ void times_table(void)
 
 			if (res < MAX && j != TIMES)
 			{
-				putchar('0' + res);
-				putchar(44);
-				putchar(9);
+				_putchar('0' + res);
+				_putchar(44);
+				_putchar(9);
 			}
 			else if (res >= MAX && j != TIMES)
 			{
 				putchar('0' + res / 10);
-				putchar('0' + res  % 10);
-				putchar(44);
-				putchar(9);
+				_putchar('0' + res % 10);
+				_putchar(44);
+				_putchar(9);
 			}
 			else if (res < MAX && j == TIMES)
 			{
-				putchar('0' + res);
+				_putchar('0' + res);
 			}
 			else if (res >= MAX && j == TIMES)
 			{
-				putchar('0' + res / 10);
-				putchar('0' + res % 10);
+				_putchar('0' + res / 10);
+				_putchar('0' + res % 10);
 			}
 		}
+		_putchar(10);
 	}
 }
