@@ -21,15 +21,15 @@ void times_table(void)
 			if (res < MAX && j != TIMES)
 			{
 				putchar('0' + res);
-				putchar('\x2C');
-				putchar(' ');
+				putchar(44);
+				putchar(9);
 			}
 			else if (res >= MAX && j != TIMES)
 			{
 				putchar('0' + res / 10);
 				putchar('0' + res  % 10);
-				putchar('\x2C');
-				putchar(' ');
+				putchar(44);
+				putchar(9);
 			}
 			else if (res < MAX && j == TIMES)
 			{
