@@ -22,14 +22,14 @@ void times_table(void)
 			{
 				putchar('0' + res);
 				putchar('\x2C');
-				putchar('\t');
+				putchar(' ');
 			}
 			else if (res >= MAX && j != TIMES)
 			{
 				putchar('0' + res / 10);
 				putchar('0' + res  % 10);
 				putchar('\x2C');
-				putchar('\t');
+				putchar(' ');
 			}
 			else if (res < MAX && j == TIMES)
 			{
