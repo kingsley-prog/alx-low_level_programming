@@ -40,7 +40,7 @@ void times_table(void)
 				_putchar('0' + res / 10);
 				_putchar('0' + res % 10);
 			}
+			_putchar(10);
 		}
-		_putchar(10);
 	}
 }
