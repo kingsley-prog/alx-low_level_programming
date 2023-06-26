@@ -7,11 +7,16 @@
 
 void print_rev(char *s)
 {
-    int i = _strlen(s);
+	int i = 0;
 
-    for (i = _strlen(s); *(s + i) != 0; i--)
-    {
-        _putchar(s[i]);
-    }
-    _putchar('\n');
+	while (*(s + i) != 0)
+		i++;
+	/* get the length without the nul */
+	int j = i - 1;
+
+	while(j--)
+	{
+		_putchar(s[j]);
+	}
+	_putchar('\n');
 }
