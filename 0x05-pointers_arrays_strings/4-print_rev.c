@@ -15,7 +15,7 @@ void print_rev(char *s)
 	while (*(s + i) != 0)
 		i++;
 	/* get the length without the nul */
-	j = i - 1;
+	j = i;
 
 	while(j--)
 	{
