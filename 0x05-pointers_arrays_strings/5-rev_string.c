@@ -15,9 +15,13 @@ void rev_string(char *s)
 		i++;
 
 	j = 0;
+	char t[i];
+
 	while (i--)
 	{
-		s[j] = s[i];
+		t[j] = s[i];
 		j++;
 	}
+	*s = *t;
+	*s = '\0';
 }
