@@ -18,22 +18,22 @@ void puts_half(char *str)
 	while (*str++)
 		str_cnt++;
 
-	if (str_cnt % 2 == 0)
+	if (str_cnt % 2 == '\0')
 	{
 		n = str_cnt / 2;
 
-		while (str[n] != 0)
+		while (str[n] != '\0')
 		{
 
 			_putchar(str[n]);
 			n++;
 		}
 	}
-	else if (str_cnt % 2 != 0)
+	else if (str_cnt % 2 != '\0')
 	{
 		n = (str_cnt - 1) / 2;
 
-		while (str[n] != 0)
+		while (str[n] != '\0')
 		{
 			_putchar(str[n]);
 			n++;
