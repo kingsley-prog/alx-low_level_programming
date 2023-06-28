@@ -9,6 +9,8 @@
  */
 void puts_half(char *str)
 {
+	int n;
+
 	int str_cnt;
 
 	str_cnt = 0;
