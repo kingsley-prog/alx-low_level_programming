@@ -8,11 +8,10 @@ void print_most_numbers(void)
 {
 	char c;
 
-	for(c = '\x30'; c <= '\x39'; c++)
+	for (c = 48; c <= 57; c++)
 	{
-		if (c == '\x32' || c == '\x35')
-			continue;
-		_putchar(c);
+		if (c != 50 && c != 52)
+			_putchar(c);
 	}
 	_putchar('\n');
 }
