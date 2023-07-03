@@ -6,13 +6,13 @@
  */
 void print_most_numbers(void)
 {
-	int c;
+	char c;
 
-	for(c = 48; c <= 57; c++)
+	for(c = '\x30'; c <= '\x39'; c++)
 	{
-		if (c == 50 || c == 52)
+		if (c == '\x32' || c == '\x35')
 			continue;
-		_putchar('0' + c);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
