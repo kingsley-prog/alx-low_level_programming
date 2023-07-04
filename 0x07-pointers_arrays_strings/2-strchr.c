@@ -18,6 +18,7 @@ char *_strchr(char *s, char c)
 			/* pointer arithemetic */
 			s = s + i;
 			return (s);
+			i++;
 		}
 	}
 	return (NULL);
