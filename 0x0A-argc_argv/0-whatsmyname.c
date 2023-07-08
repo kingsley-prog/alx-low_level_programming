@@ -1,6 +1,8 @@
 #include "main.h"
 /**
  * main - entry point
+ * @argc: argument count
+ * @argv: argument vector
  *
  * Return: return success
  *
