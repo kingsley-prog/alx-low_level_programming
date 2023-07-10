@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - entry point
  * @argc: argument count
@@ -9,23 +10,23 @@
  */
 int main(int argc, char __attribute__((unused)) **argv)
 {
-	int i;
+    int i;
 
-	i = 0;
+    i = 0;
 
-	while (i < argc)
-	{
-		i++;
-	}
-	i--;
-	if (i >= 10)
-	{
-		_putchar(i / 10 + '0');
-		_putchar(i % 10 + '0');
-	}
-	else
-		_putchar(i + '0');
-	_putchar('\n');
+    while (i < argc)
+    {
+        i++;
+    }
+    i--;
+    if (i >= 10)
+    {
+        putchar(i / 10 + '0');
+        putchar(i % 10 + '0');
+    }
+    else
+        putchar(i + '0');
+    putchar('\n');
 
-	return (0);
+    return (0);
 }
