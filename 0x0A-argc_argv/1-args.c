@@ -15,17 +15,18 @@ int main(int argc, char __attribute__((unused)) **argv)
 
 	while (i < argc)
 	{
-	i++;
+		i++;
 	}
 	i--;
+
 	if (i >= 10)
 	{
-	_putchar(i / 10 + '0');
-	_putchar(i % 10 + '0');
+		_putchar(i / 10 + '0');
+		_putchar(i % 10 + '0');
 	}
 	else
-	_putchar(i + '0');
-	_putchar('\n');
+		_putchar(i + '0');
+		_putchar('\n');
 
 	return (0);
 }
