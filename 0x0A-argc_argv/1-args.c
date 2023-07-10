@@ -11,7 +11,7 @@ int main(int argc, char __attribute__((unused)) **argv)
 {
 	int i;
 
-	i = 1;
+	i = 0;
 
 	while (i < argc)
 	{
