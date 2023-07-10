@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - entry point
  * @argc: argument count
@@ -18,13 +19,13 @@ int main(int argc, char **argv)
 
 		while (argv[i][j] != 0)
 		{
-			_putchar(argv[i][j]);
+			putchar(argv[i][j]);
 
 			j++;
 		}
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
