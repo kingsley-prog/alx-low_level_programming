@@ -9,23 +9,23 @@
  */
 int main(int argc, char __attribute__((unused)) **argv)
 {
-    int i;
+	int i;
 
-    i = 0;
+	i = 0;
 
-    while (i < argc)
-    {
+	while (i < argc)
+	{
 	i++;
-    }
-    i--;
-    if (i >= 10)
-    {
+	}
+	i--;
+	if (i >= 10)
+	{
 	_putchar(i / 10 + '0');
 	_putchar(i % 10 + '0');
-    }
-    else
+	}
+	else
 	_putchar(i + '0');
-    _putchar('\n');
+	_putchar('\n');
 
-    return (0);
+	return (0);
 }
